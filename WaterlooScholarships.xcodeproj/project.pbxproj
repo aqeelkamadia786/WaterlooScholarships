@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94D70A951F8DAA3B008227F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70A941F8DAA3B008227F5 /* AppDelegate.swift */; };
+		94D70A971F8DAA3B008227F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70A961F8DAA3B008227F5 /* ViewController.swift */; };
+		94D70A9A1F8DAA3B008227F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D70A981F8DAA3B008227F5 /* Main.storyboard */; };
+		94D70A9C1F8DAA3B008227F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D70A9B1F8DAA3B008227F5 /* Assets.xcassets */; };
+		94D70A9F1F8DAA3B008227F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D70A9D1F8DAA3B008227F5 /* LaunchScreen.storyboard */; };
+		94D70AAA1F8DAA3C008227F5 /* WaterlooScholarshipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AA91F8DAA3C008227F5 /* WaterlooScholarshipsTests.swift */; };
+		94D70AB51F8DAA3C008227F5 /* WaterlooScholarshipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AB41F8DAA3C008227F5 /* WaterlooScholarshipsUITests.swift */; };
+		94D70AC31F8DAB9D008227F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AC21F8DAB9D008227F5 /* NetworkManager.swift */; };
+		94D70AC51F9052E0008227F5 /* UndergraduateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AC41F9052E0008227F5 /* UndergraduateTableViewController.swift */; };
+		94D70AC71F9053CB008227F5 /* Scholarship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AC61F9053CB008227F5 /* Scholarship.swift */; };
+		94D70AC91F905551008227F5 /* UndergraduateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AC81F905551008227F5 /* UndergraduateTableViewCell.swift */; };
+		94D70ACD1F93EF70008227F5 /* GraduateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70ACC1F93EF70008227F5 /* GraduateTableViewController.swift */; };
+		94D70ACF1F93EFDC008227F5 /* GraduateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70ACE1F93EFDC008227F5 /* GraduateTableViewCell.swift */; };
+		94D70AD11F93FAE3008227F5 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AD01F93FAE3008227F5 /* DetailsViewController.swift */; };
+		94D70AD31F941208008227F5 /* FavouritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AD21F941208008227F5 /* FavouritesTableViewController.swift */; };
+		94D70AD51F958E8C008227F5 /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AD41F958E8C008227F5 /* FavouritesTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94D70AA61F8DAA3C008227F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94D70A891F8DAA3B008227F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94D70A901F8DAA3B008227F5;
+			remoteInfo = WaterlooScholarships;
+		};
+		94D70AB11F8DAA3C008227F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94D70A891F8DAA3B008227F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94D70A901F8DAA3B008227F5;
+			remoteInfo = WaterlooScholarships;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94D70A911F8DAA3B008227F5 /* WaterlooScholarships.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterlooScholarships.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D70A941F8DAA3B008227F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94D70A961F8DAA3B008227F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94D70A991F8DAA3B008227F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94D70A9B1F8DAA3B008227F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94D70A9E1F8DAA3B008227F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94D70AA01F8DAA3B008227F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D70AA51F8DAA3C008227F5 /* WaterlooScholarshipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterlooScholarshipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D70AA91F8DAA3C008227F5 /* WaterlooScholarshipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterlooScholarshipsTests.swift; sourceTree = "<group>"; };
+		94D70AAB1F8DAA3C008227F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D70AB01F8DAA3C008227F5 /* WaterlooScholarshipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterlooScholarshipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D70AB41F8DAA3C008227F5 /* WaterlooScholarshipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterlooScholarshipsUITests.swift; sourceTree = "<group>"; };
+		94D70AB61F8DAA3C008227F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D70AC21F8DAB9D008227F5 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		94D70AC41F9052E0008227F5 /* UndergraduateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UndergraduateTableViewController.swift; sourceTree = "<group>"; };
+		94D70AC61F9053CB008227F5 /* Scholarship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scholarship.swift; sourceTree = "<group>"; };
+		94D70AC81F905551008227F5 /* UndergraduateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UndergraduateTableViewCell.swift; sourceTree = "<group>"; };
+		94D70ACC1F93EF70008227F5 /* GraduateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraduateTableViewController.swift; sourceTree = "<group>"; };
+		94D70ACE1F93EFDC008227F5 /* GraduateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraduateTableViewCell.swift; sourceTree = "<group>"; };
+		94D70AD01F93FAE3008227F5 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		94D70AD21F941208008227F5 /* FavouritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewController.swift; sourceTree = "<group>"; };
+		94D70AD41F958E8C008227F5 /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94D70A8E1F8DAA3B008227F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D70AA21F8DAA3C008227F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D70AAD1F8DAA3C008227F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94D70A881F8DAA3B008227F5 = {
+			isa = PBXGroup;
+			children = (
+				94D70A931F8DAA3B008227F5 /* WaterlooScholarships */,
+				94D70AA81F8DAA3C008227F5 /* WaterlooScholarshipsTests */,
+				94D70AB31F8DAA3C008227F5 /* WaterlooScholarshipsUITests */,
+				94D70A921F8DAA3B008227F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94D70A921F8DAA3B008227F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94D70A911F8DAA3B008227F5 /* WaterlooScholarships.app */,
+				94D70AA51F8DAA3C008227F5 /* WaterlooScholarshipsTests.xctest */,
+				94D70AB01F8DAA3C008227F5 /* WaterlooScholarshipsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94D70A931F8DAA3B008227F5 /* WaterlooScholarships */ = {
+			isa = PBXGroup;
+			children = (
+				94D70A941F8DAA3B008227F5 /* AppDelegate.swift */,
+				94D70A961F8DAA3B008227F5 /* ViewController.swift */,
+				94D70A981F8DAA3B008227F5 /* Main.storyboard */,
+				94D70A9B1F8DAA3B008227F5 /* Assets.xcassets */,
+				94D70A9D1F8DAA3B008227F5 /* LaunchScreen.storyboard */,
+				94D70AA01F8DAA3B008227F5 /* Info.plist */,
+				94D70AC21F8DAB9D008227F5 /* NetworkManager.swift */,
+				94D70AC61F9053CB008227F5 /* Scholarship.swift */,
+				94D70AC41F9052E0008227F5 /* UndergraduateTableViewController.swift */,
+				94D70AC81F905551008227F5 /* UndergraduateTableViewCell.swift */,
+				94D70ACC1F93EF70008227F5 /* GraduateTableViewController.swift */,
+				94D70ACE1F93EFDC008227F5 /* GraduateTableViewCell.swift */,
+				94D70AD01F93FAE3008227F5 /* DetailsViewController.swift */,
+				94D70AD21F941208008227F5 /* FavouritesTableViewController.swift */,
+				94D70AD41F958E8C008227F5 /* FavouritesTableViewCell.swift */,
+			);
+			path = WaterlooScholarships;
+			sourceTree = "<group>";
+		};
+		94D70AA81F8DAA3C008227F5 /* WaterlooScholarshipsTests */ = {
+			isa = PBXGroup;
+			children = (
+				94D70AA91F8DAA3C008227F5 /* WaterlooScholarshipsTests.swift */,
+				94D70AAB1F8DAA3C008227F5 /* Info.plist */,
+			);
+			path = WaterlooScholarshipsTests;
+			sourceTree = "<group>";
+		};
+		94D70AB31F8DAA3C008227F5 /* WaterlooScholarshipsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94D70AB41F8DAA3C008227F5 /* WaterlooScholarshipsUITests.swift */,
+				94D70AB61F8DAA3C008227F5 /* Info.plist */,
+			);
+			path = WaterlooScholarshipsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94D70A901F8DAA3B008227F5 /* WaterlooScholarships */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D70AB91F8DAA3C008227F5 /* Build configuration list for PBXNativeTarget "WaterlooScholarships" */;
+			buildPhases = (
+				94D70A8D1F8DAA3B008227F5 /* Sources */,
+				94D70A8E1F8DAA3B008227F5 /* Frameworks */,
+				94D70A8F1F8DAA3B008227F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterlooScholarships;
+			productName = WaterlooScholarships;
+			productReference = 94D70A911F8DAA3B008227F5 /* WaterlooScholarships.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94D70AA41F8DAA3C008227F5 /* WaterlooScholarshipsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D70ABC1F8DAA3C008227F5 /* Build configuration list for PBXNativeTarget "WaterlooScholarshipsTests" */;
+			buildPhases = (
+				94D70AA11F8DAA3C008227F5 /* Sources */,
+				94D70AA21F8DAA3C008227F5 /* Frameworks */,
+				94D70AA31F8DAA3C008227F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94D70AA71F8DAA3C008227F5 /* PBXTargetDependency */,
+			);
+			name = WaterlooScholarshipsTests;
+			productName = WaterlooScholarshipsTests;
+			productReference = 94D70AA51F8DAA3C008227F5 /* WaterlooScholarshipsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94D70AAF1F8DAA3C008227F5 /* WaterlooScholarshipsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D70ABF1F8DAA3C008227F5 /* Build configuration list for PBXNativeTarget "WaterlooScholarshipsUITests" */;
+			buildPhases = (
+				94D70AAC1F8DAA3C008227F5 /* Sources */,
+				94D70AAD1F8DAA3C008227F5 /* Frameworks */,
+				94D70AAE1F8DAA3C008227F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94D70AB21F8DAA3C008227F5 /* PBXTargetDependency */,
+			);
+			name = WaterlooScholarshipsUITests;
+			productName = WaterlooScholarshipsUITests;
+			productReference = 94D70AB01F8DAA3C008227F5 /* WaterlooScholarshipsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94D70A891F8DAA3B008227F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Aqeel Kamadia";
+				TargetAttributes = {
+					94D70A901F8DAA3B008227F5 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 48BF2267S8;
+						ProvisioningStyle = Automatic;
+					};
+					94D70AA41F8DAA3C008227F5 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 48BF2267S8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 94D70A901F8DAA3B008227F5;
+					};
+					94D70AAF1F8DAA3C008227F5 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 48BF2267S8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 94D70A901F8DAA3B008227F5;
+					};
+				};
+			};
+			buildConfigurationList = 94D70A8C1F8DAA3B008227F5 /* Build configuration list for PBXProject "WaterlooScholarships" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94D70A881F8DAA3B008227F5;
+			productRefGroup = 94D70A921F8DAA3B008227F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94D70A901F8DAA3B008227F5 /* WaterlooScholarships */,
+				94D70AA41F8DAA3C008227F5 /* WaterlooScholarshipsTests */,
+				94D70AAF1F8DAA3C008227F5 /* WaterlooScholarshipsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94D70A8F1F8DAA3B008227F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D70A9F1F8DAA3B008227F5 /* LaunchScreen.storyboard in Resources */,
+				94D70A9C1F8DAA3B008227F5 /* Assets.xcassets in Resources */,
+				94D70A9A1F8DAA3B008227F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D70AA31F8DAA3C008227F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D70AAE1F8DAA3C008227F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94D70A8D1F8DAA3B008227F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D70AC91F905551008227F5 /* UndergraduateTableViewCell.swift in Sources */,
+				94D70AD31F941208008227F5 /* FavouritesTableViewController.swift in Sources */,
+				94D70ACD1F93EF70008227F5 /* GraduateTableViewController.swift in Sources */,
+				94D70AD51F958E8C008227F5 /* FavouritesTableViewCell.swift in Sources */,
+				94D70AD11F93FAE3008227F5 /* DetailsViewController.swift in Sources */,
+				94D70AC31F8DAB9D008227F5 /* NetworkManager.swift in Sources */,
+				94D70AC71F9053CB008227F5 /* Scholarship.swift in Sources */,
+				94D70A971F8DAA3B008227F5 /* ViewController.swift in Sources */,
+				94D70A951F8DAA3B008227F5 /* AppDelegate.swift in Sources */,
+				94D70ACF1F93EFDC008227F5 /* GraduateTableViewCell.swift in Sources */,
+				94D70AC51F9052E0008227F5 /* UndergraduateTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D70AA11F8DAA3C008227F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D70AAA1F8DAA3C008227F5 /* WaterlooScholarshipsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D70AAC1F8DAA3C008227F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D70AB51F8DAA3C008227F5 /* WaterlooScholarshipsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94D70AA71F8DAA3C008227F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94D70A901F8DAA3B008227F5 /* WaterlooScholarships */;
+			targetProxy = 94D70AA61F8DAA3C008227F5 /* PBXContainerItemProxy */;
+		};
+		94D70AB21F8DAA3C008227F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94D70A901F8DAA3B008227F5 /* WaterlooScholarships */;
+			targetProxy = 94D70AB11F8DAA3C008227F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94D70A981F8DAA3B008227F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94D70A991F8DAA3B008227F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94D70A9D1F8DAA3B008227F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94D70A9E1F8DAA3B008227F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94D70AB71F8DAA3C008227F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94D70AB81F8DAA3C008227F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94D70ABA1F8DAA3C008227F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48BF2267S8;
+				INFOPLIST_FILE = WaterlooScholarships/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AqeelKamadia.WaterlooScholarships;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		94D70ABB1F8DAA3C008227F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48BF2267S8;
+				INFOPLIST_FILE = WaterlooScholarships/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AqeelKamadia.WaterlooScholarships;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		94D70ABD1F8DAA3C008227F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 48BF2267S8;
+				INFOPLIST_FILE = WaterlooScholarshipsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AqeelKamadia.WaterlooScholarshipsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterlooScholarships.app/WaterlooScholarships";
+			};
+			name = Debug;
+		};
+		94D70ABE1F8DAA3C008227F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 48BF2267S8;
+				INFOPLIST_FILE = WaterlooScholarshipsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AqeelKamadia.WaterlooScholarshipsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterlooScholarships.app/WaterlooScholarships";
+			};
+			name = Release;
+		};
+		94D70AC01F8DAA3C008227F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 48BF2267S8;
+				INFOPLIST_FILE = WaterlooScholarshipsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AqeelKamadia.WaterlooScholarshipsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WaterlooScholarships;
+			};
+			name = Debug;
+		};
+		94D70AC11F8DAA3C008227F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 48BF2267S8;
+				INFOPLIST_FILE = WaterlooScholarshipsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AqeelKamadia.WaterlooScholarshipsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WaterlooScholarships;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94D70A8C1F8DAA3B008227F5 /* Build configuration list for PBXProject "WaterlooScholarships" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D70AB71F8DAA3C008227F5 /* Debug */,
+				94D70AB81F8DAA3C008227F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94D70AB91F8DAA3C008227F5 /* Build configuration list for PBXNativeTarget "WaterlooScholarships" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D70ABA1F8DAA3C008227F5 /* Debug */,
+				94D70ABB1F8DAA3C008227F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94D70ABC1F8DAA3C008227F5 /* Build configuration list for PBXNativeTarget "WaterlooScholarshipsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D70ABD1F8DAA3C008227F5 /* Debug */,
+				94D70ABE1F8DAA3C008227F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94D70ABF1F8DAA3C008227F5 /* Build configuration list for PBXNativeTarget "WaterlooScholarshipsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D70AC01F8DAA3C008227F5 /* Debug */,
+				94D70AC11F8DAA3C008227F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94D70A891F8DAA3B008227F5 /* Project object */;
+}
