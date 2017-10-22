@@ -50,7 +50,10 @@ class GraduateTableViewController: UITableViewController, UISearchBarDelegate {
             return
         }
         filteredScholarships = scholarships.filter({(scholarship: Scholarship) -> Bool in
-            return scholarship.title.lowercased().contains(searchText.lowercased())
+            let programs = scholarship.programs.filter({(program: String) -> Bool in
+                return program.lowercased().contains(searchText.lowercased())
+            })
+            return scholarship.title.lowercased().contains(searchText.lowercased()) || programs.count > 0
         })
         tableView.reloadData()
     }
