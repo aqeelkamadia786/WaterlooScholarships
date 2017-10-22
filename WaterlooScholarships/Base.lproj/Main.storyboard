@@ -218,9 +218,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="S95-xm-ueq">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FavouritesTableViewCell" id="eEv-Yq-1Cg" customClass="FavouritesTableViewCell" customModule="WaterlooScholarships" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eEv-Yq-1Cg" id="gSs-7G-pr4">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -252,6 +257,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Favourites" id="SBt-aY-w5r"/>
+                    <connections>
+                        <outlet property="searchBar" destination="S95-xm-ueq" id="0l4-JR-O35"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLQ-ej-iun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
