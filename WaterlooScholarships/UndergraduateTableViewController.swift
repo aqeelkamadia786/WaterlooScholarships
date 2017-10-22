@@ -16,8 +16,6 @@ class UndergraduateTableViewController: UITableViewController, UISearchBarDelega
     var filteredScholarships: [Scholarship] = []
     let defaults = UserDefaults.standard
     @IBOutlet weak var searchBar: UISearchBar!
-    let searchController = UISearchController(searchResultsController: nil)
-//    let searchBar = UISearchBar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +43,17 @@ class UndergraduateTableViewController: UITableViewController, UISearchBarDelega
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filterContentForSearchText(searchText: searchText)
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = nil
+        searchBar.showsCancelButton = false
+        searchBar.endEditing(true)
+        tableView.reloadData()
     }
     
     func filterContentForSearchText(searchText: String) {

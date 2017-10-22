@@ -163,9 +163,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Y19-hT-lQe">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GraduateTableViewCell" id="mxn-h1-XuL" customClass="GraduateTableViewCell" customModule="WaterlooScholarships" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mxn-h1-XuL" id="pOK-Cq-ud1">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -197,6 +202,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Graduate Scholarships" id="MOb-v4-sHl"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Y19-hT-lQe" id="E7N-qi-9NI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAA-hm-hQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
