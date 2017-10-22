@@ -13,12 +13,14 @@ class Scholarship: NSObject, NSCoding {
     let value: String
     let details: String
     let programs: [String]
+    var favourited: Bool
     
     init(with dictionary: [String: AnyObject]) {
         self.title = dictionary["title"] as! String
         self.value = dictionary["value"] as! String
         self.details = dictionary["description"] as! String
         self.programs = dictionary["programs"] as! [String]
+        self.favourited = false
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -26,6 +28,7 @@ class Scholarship: NSObject, NSCoding {
         self.value = aDecoder.decodeObject(forKey: "value") as! String
         self.details = aDecoder.decodeObject(forKey: "details") as! String
         self.programs = aDecoder.decodeObject(forKey: "programs") as! [String]
+        self.favourited = aDecoder.decodeBool(forKey: "favourited")
     }
     
     func encode(with aCoder: NSCoder) {
@@ -33,5 +36,6 @@ class Scholarship: NSObject, NSCoding {
         aCoder.encode(self.value, forKey: "value")
         aCoder.encode(self.details, forKey: "details")
         aCoder.encode(self.programs, forKey: "programs")
+        aCoder.encode(self.favourited, forKey: "favourited")
     }
 }

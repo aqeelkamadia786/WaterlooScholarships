@@ -63,7 +63,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AlI-cc-3lh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1585" y="-664"/>
+            <point key="canvasLocation" x="1553" y="-911"/>
         </scene>
         <!--Title-->
         <scene sceneID="NC3-py-DVb">
@@ -101,17 +101,30 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25A-LL-KU6">
+                                        <rect key="frame" x="100" y="175" width="175" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Add to Favourites">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="favouriteButtonPressed:" destination="hDU-Le-BE6" eventType="touchUpInside" id="HaT-74-9cD"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="QRI-h8-eBz" firstAttribute="top" secondItem="E2W-FB-1i9" secondAttribute="bottom" constant="30" id="5bl-4S-VJk"/>
                                     <constraint firstItem="8Ng-kp-0Gn" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="AeV-4h-bG1"/>
-                                    <constraint firstAttribute="bottom" secondItem="QRI-h8-eBz" secondAttribute="bottom" constant="352" id="Jh4-hB-DKG"/>
+                                    <constraint firstItem="25A-LL-KU6" firstAttribute="top" secondItem="QRI-h8-eBz" secondAttribute="bottom" constant="32" id="M9g-xc-9Qf"/>
+                                    <constraint firstItem="25A-LL-KU6" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="100" id="Nwu-HW-Xa1"/>
                                     <constraint firstItem="QRI-h8-eBz" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="TxO-Mq-Sla"/>
                                     <constraint firstAttribute="trailing" secondItem="8Ng-kp-0Gn" secondAttribute="trailing" constant="12" id="U1f-qW-icT"/>
+                                    <constraint firstAttribute="bottom" secondItem="25A-LL-KU6" secondAttribute="bottom" constant="319" id="VTI-sC-HH0"/>
                                     <constraint firstAttribute="trailing" secondItem="QRI-h8-eBz" secondAttribute="trailing" constant="12" id="VZA-rX-ARh"/>
                                     <constraint firstItem="8Ng-kp-0Gn" firstAttribute="top" secondItem="o3F-QB-Erd" secondAttribute="top" constant="20" id="ksC-Jd-ocD"/>
                                     <constraint firstItem="E2W-FB-1i9" firstAttribute="top" secondItem="8Ng-kp-0Gn" secondAttribute="bottom" constant="30" id="lNw-4A-2Tv"/>
                                     <constraint firstAttribute="trailing" secondItem="E2W-FB-1i9" secondAttribute="trailing" constant="12" id="tsB-cd-OMN"/>
+                                    <constraint firstAttribute="trailing" secondItem="25A-LL-KU6" secondAttribute="trailing" constant="100" id="v6o-rp-xP2"/>
                                     <constraint firstItem="E2W-FB-1i9" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="xOc-j2-kDz"/>
                                 </constraints>
                             </scrollView>
@@ -127,6 +140,7 @@
                     <navigationItem key="navigationItem" title="Title" id="dhZ-B2-DoN"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="QRI-h8-eBz" id="F55-Vr-sdo"/>
+                        <outlet property="favouriteButton" destination="25A-LL-KU6" id="zAl-9D-6aI"/>
                         <outlet property="titleLabel" destination="8Ng-kp-0Gn" id="u25-Dz-NM5"/>
                         <outlet property="valueLabel" destination="E2W-FB-1i9" id="ha1-IQ-sBy"/>
                     </connections>
@@ -149,6 +163,7 @@
                         <segue destination="wRW-bN-yW0" kind="relationship" relationship="viewControllers" id="Se2-9x-h9H"/>
                         <segue destination="6nn-aS-6l2" kind="relationship" relationship="viewControllers" id="oga-G3-4nU"/>
                         <segue destination="UP3-9x-C8M" kind="relationship" relationship="viewControllers" id="jp8-4k-iBX"/>
+                        <segue destination="qQO-4P-B59" kind="relationship" relationship="viewControllers" id="TwA-6o-FZY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPY-DI-yBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -208,7 +223,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAA-hm-hQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1554" y="7"/>
+            <point key="canvasLocation" x="1553" y="-233"/>
         </scene>
         <!--Favourites-->
         <scene sceneID="nw3-70-Bt0">
@@ -218,14 +233,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="S95-xm-ueq">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FavouritesTableViewCell" id="eEv-Yq-1Cg" customClass="FavouritesTableViewCell" customModule="WaterlooScholarships" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eEv-Yq-1Cg" id="gSs-7G-pr4">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -257,13 +267,56 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Favourites" id="SBt-aY-w5r"/>
-                    <connections>
-                        <outlet property="searchBar" destination="S95-xm-ueq" id="0l4-JR-O35"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLQ-ej-iun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1552.8" y="769.56521739130437"/>
+            <point key="canvasLocation" x="1553" y="448"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pnd-Dx-iph">
+            <objects>
+                <navigationController id="qQO-4P-B59" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="Q4A-oQ-6kv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cSG-ct-6Kl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="t2M-0u-50z" kind="relationship" relationship="rootViewController" id="qjX-yA-DK8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Xn-in-KU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="1165"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="cKm-Zr-uj5">
+            <objects>
+                <viewController id="t2M-0u-50z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WLN-Qd-aS2"/>
+                        <viewControllerLayoutGuide type="bottom" id="7MP-JR-8SA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1TQ-Hh-R78">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Tab bar icons supplied www.iconbeast.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BsY-94-4id">
+                                <rect key="frame" x="67" y="133" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="More" id="e3J-tC-T7w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mW9-hm-Vx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1552.8" y="1163.568215892054"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7DQ-lL-eSq">
@@ -280,13 +333,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5X-Ag-mZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="770"/>
+            <point key="canvasLocation" x="670" y="448"/>
         </scene>
         <!--Undergrad-->
         <scene sceneID="fhc-O2-wlu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wRW-bN-yW0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Undergrad" id="Qze-EG-FmM"/>
+                    <tabBarItem key="tabBarItem" title="Undergrad" image="graduation-cap.png" id="Qze-EG-FmM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RXl-Or-YCN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -299,13 +352,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjq-ZC-tJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="-664"/>
+            <point key="canvasLocation" x="670" y="-910"/>
         </scene>
         <!--Graduate-->
         <scene sceneID="EPh-Nl-MXc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6nn-aS-6l2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Graduate" id="SvM-NT-GCZ"/>
+                    <tabBarItem key="tabBarItem" title="Graduate" image="dollar-sign.png" id="SvM-NT-GCZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pNr-QQ-4Uv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -318,10 +371,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLl-0k-cWw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="7"/>
+            <point key="canvasLocation" x="670" y="-233"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dollar-sign.png" width="30" height="30"/>
+        <image name="graduation-cap.png" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QlJ-CU-Pmb"/>
+        <segue reference="q3F-5u-JE3"/>
     </inferredMetricsTieBreakers>
 </document>

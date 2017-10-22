@@ -25,16 +25,6 @@ class UndergraduateTableViewController: UITableViewController, UISearchBarDelega
                 self.scholarships.append(Scholarship(with: undergrad))
             }
             print(self.scholarships.count)
-            // Can't save [Scholarship] to UserDefaults
-            let defaults = UserDefaults.standard
-            let item = [self.scholarships[0]] as [Scholarship]
-            defaults.set(NSKeyedArchiver.archivedData(withRootObject: item), forKey: "Favourites")
-            for i in 1..<10 {
-                var array = NSKeyedUnarchiver.unarchiveObject(with: defaults.object(forKey: "Favourites") as! Data) as! [Scholarship]
-                array.append(self.scholarships[i])
-                defaults.set(NSKeyedArchiver.archivedData(withRootObject: array), forKey: "Favourites")
-                defaults.synchronize()
-            }
             self.tableView.reloadData()
         })
         searchBar.delegate = self
