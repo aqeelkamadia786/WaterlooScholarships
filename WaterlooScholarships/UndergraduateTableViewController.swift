@@ -90,6 +90,10 @@ class UndergraduateTableViewController: UITableViewController, UISearchBarDelega
         return scholarships.count
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UndergraduateTableViewCell", for: indexPath) as! UndergraduateTableViewCell
         let scholarship: Scholarship
@@ -99,6 +103,7 @@ class UndergraduateTableViewController: UITableViewController, UISearchBarDelega
             scholarship = scholarships[indexPath.row]
         }
         cell.title.text = scholarship.title
+        cell.value.text = scholarship.value
         return cell
     }
 

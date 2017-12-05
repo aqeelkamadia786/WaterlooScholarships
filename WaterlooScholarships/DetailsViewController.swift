@@ -33,8 +33,13 @@ class DetailsViewController: UIViewController {
     @IBAction func favouriteButtonPressed(_ sender: Any) {
         if let scholarship = scholarship {
             scholarship.favourited = !scholarship.favourited
-            var array = NSKeyedUnarchiver.unarchiveObject(with: defaults.object(forKey: "Favourites") as! Data) as! [Scholarship]
-            array.append(scholarship)
+            var array: [Scholarship] = []
+            if let favouritesData = defaults.object(forKey: "Favourites") as? Data {
+                array = NSKeyedUnarchiver.unarchiveObject(with: favouritesData) as! [Scholarship]
+                array.append(scholarship)
+            }   else {
+                array.append(scholarship)
+            }
             defaults.set(NSKeyedArchiver.archivedData(withRootObject: array), forKey: "Favourites")
             defaults.synchronize()
             if scholarship.favourited {

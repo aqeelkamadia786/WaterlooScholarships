@@ -16,15 +16,19 @@ class FavouritesTableViewController: UITableViewController, NSKeyedUnarchiverDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scholarships = NSKeyedUnarchiver.unarchiveObject(with: defaults.object(forKey: "Favourites") as! Data) as! [Scholarship]
-        tableView.reloadData()
+        if let favouritesData = defaults.object(forKey: "Favourites") as? Data {
+            scholarships = NSKeyedUnarchiver.unarchiveObject(with: favouritesData) as! [Scholarship]
+            tableView.reloadData()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // Get scholarships from UserDefaults
-        scholarships = NSKeyedUnarchiver.unarchiveObject(with: defaults.object(forKey: "Favourites") as! Data) as! [Scholarship]
-        tableView.reloadData()
+        if let favouritesData = defaults.object(forKey: "Favourites") as? Data {
+            scholarships = NSKeyedUnarchiver.unarchiveObject(with: favouritesData) as! [Scholarship]
+            tableView.reloadData()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -42,9 +46,14 @@ class FavouritesTableViewController: UITableViewController, NSKeyedUnarchiverDel
         return scholarships.count
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavouritesTableViewCell", for: indexPath) as! FavouritesTableViewCell
         cell.title.text = scholarships[indexPath.row].title
+        cell.value.text = scholarships[indexPath.row].value
         return cell
     }
     

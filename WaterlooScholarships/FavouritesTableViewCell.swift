@@ -12,6 +12,7 @@ import UIKit
 class FavouritesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var value: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
