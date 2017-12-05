@@ -14,7 +14,7 @@
         <scene sceneID="cfS-lF-NqF">
             <objects>
                 <tableViewController storyboardIdentifier="UndergraduateTableViewController" title="Undergradate Scholarships" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k8j-Er-8xu" customClass="UndergraduateTableViewController" customModule="WaterlooScholarships" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="gMv-w3-rbN">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="gMv-w3-rbN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,31 +93,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3F-QB-Erd">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ng-kp-0Gn">
-                                        <rect key="frame" x="20" y="20" width="343" height="21"/>
+                                        <rect key="frame" x="20" y="20" width="334" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="343" id="fTS-TP-dmY"/>
+                                            <constraint firstAttribute="width" constant="334" id="z7v-fK-gcX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRI-h8-eBz">
-                                        <rect key="frame" x="20" y="122" width="343" height="21"/>
+                                        <rect key="frame" x="20" y="122" width="334" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Value" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2W-FB-1i9">
-                                        <rect key="frame" x="20" y="71" width="343" height="21"/>
+                                        <rect key="frame" x="20" y="71" width="334" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25A-LL-KU6">
-                                        <rect key="frame" x="100" y="175" width="175" height="30"/>
+                                        <rect key="frame" x="117" y="175" width="142" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Add to Favourites">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -131,22 +131,22 @@
                                     <constraint firstItem="QRI-h8-eBz" firstAttribute="top" secondItem="E2W-FB-1i9" secondAttribute="bottom" constant="30" id="5bl-4S-VJk"/>
                                     <constraint firstItem="8Ng-kp-0Gn" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="AeV-4h-bG1"/>
                                     <constraint firstItem="25A-LL-KU6" firstAttribute="top" secondItem="QRI-h8-eBz" secondAttribute="bottom" constant="32" id="M9g-xc-9Qf"/>
-                                    <constraint firstItem="25A-LL-KU6" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="100" id="Nwu-HW-Xa1"/>
                                     <constraint firstItem="QRI-h8-eBz" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="TxO-Mq-Sla"/>
-                                    <constraint firstAttribute="trailing" secondItem="8Ng-kp-0Gn" secondAttribute="trailing" constant="12" id="U1f-qW-icT"/>
-                                    <constraint firstAttribute="bottom" secondItem="25A-LL-KU6" secondAttribute="bottom" constant="319" id="VTI-sC-HH0"/>
-                                    <constraint firstAttribute="trailing" secondItem="QRI-h8-eBz" secondAttribute="trailing" constant="12" id="VZA-rX-ARh"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Ng-kp-0Gn" secondAttribute="trailing" constant="21" id="U1f-qW-icT"/>
+                                    <constraint firstItem="25A-LL-KU6" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="117" id="UME-im-AJb"/>
+                                    <constraint firstAttribute="bottom" secondItem="25A-LL-KU6" secondAttribute="bottom" constant="349" id="VTI-sC-HH0"/>
+                                    <constraint firstAttribute="trailing" secondItem="QRI-h8-eBz" secondAttribute="trailing" constant="21" id="VZA-rX-ARh"/>
                                     <constraint firstItem="8Ng-kp-0Gn" firstAttribute="top" secondItem="o3F-QB-Erd" secondAttribute="top" constant="20" id="ksC-Jd-ocD"/>
                                     <constraint firstItem="E2W-FB-1i9" firstAttribute="top" secondItem="8Ng-kp-0Gn" secondAttribute="bottom" constant="30" id="lNw-4A-2Tv"/>
-                                    <constraint firstAttribute="trailing" secondItem="E2W-FB-1i9" secondAttribute="trailing" constant="12" id="tsB-cd-OMN"/>
-                                    <constraint firstAttribute="trailing" secondItem="25A-LL-KU6" secondAttribute="trailing" constant="100" id="v6o-rp-xP2"/>
+                                    <constraint firstAttribute="trailing" secondItem="E2W-FB-1i9" secondAttribute="trailing" constant="21" id="tsB-cd-OMN"/>
+                                    <constraint firstAttribute="trailing" secondItem="25A-LL-KU6" secondAttribute="trailing" constant="116" id="vDG-IX-nkN"/>
                                     <constraint firstItem="E2W-FB-1i9" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="xOc-j2-kDz"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UfU-6q-Usx" firstAttribute="top" secondItem="o3F-QB-Erd" secondAttribute="bottom" constant="-49" id="DBI-Pu-RYR"/>
+                            <constraint firstItem="UfU-6q-Usx" firstAttribute="top" secondItem="o3F-QB-Erd" secondAttribute="bottom" id="DBI-Pu-RYR"/>
                             <constraint firstItem="o3F-QB-Erd" firstAttribute="top" secondItem="FtK-Ky-px6" secondAttribute="topMargin" id="RZs-DK-TYr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="o3F-QB-Erd" secondAttribute="trailing" constant="-16" id="pDP-j3-Jg3"/>
                             <constraint firstItem="o3F-QB-Erd" firstAttribute="leading" secondItem="FtK-Ky-px6" secondAttribute="leading" id="s3b-Om-ahK"/>
@@ -189,7 +189,7 @@
         <scene sceneID="Dic-D8-2LS">
             <objects>
                 <tableViewController title="Graduate Scholarships" id="Qvg-rN-H9E" customClass="GraduateTableViewController" customModule="WaterlooScholarships" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ufn-AA-uWs">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ufn-AA-uWs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -259,7 +259,7 @@
         <scene sceneID="nw3-70-Bt0">
             <objects>
                 <tableViewController id="vVO-z5-mAh" customClass="FavouritesTableViewController" customModule="WaterlooScholarships" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eul-Ni-Oyh">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="eul-Ni-Oyh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -322,7 +322,7 @@
             <objects>
                 <navigationController id="qQO-4P-B59" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="more" id="Q4A-oQ-6kv"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cSG-ct-6Kl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="cSG-ct-6Kl">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -368,7 +368,7 @@
             <objects>
                 <navigationController id="UP3-9x-C8M" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="3pF-py-HIK"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rXf-Ec-FDp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="rXf-Ec-FDp">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -386,7 +386,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wRW-bN-yW0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Undergrad" image="graduation-cap.png" id="Qze-EG-FmM"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RXl-Or-YCN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="RXl-Or-YCN">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -405,7 +405,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6nn-aS-6l2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Graduate" image="dollar-sign.png" id="SvM-NT-GCZ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pNr-QQ-4Uv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="pNr-QQ-4Uv">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
