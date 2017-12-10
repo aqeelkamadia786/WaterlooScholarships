@@ -11,9 +11,9 @@ import UIKit
 
 class GraduateTableViewController: UITableViewController, UISearchBarDelegate {
     
-    let networkManager = NetworkManager()
     var scholarships: [Scholarship] = []
     var filteredScholarships: [Scholarship] = []
+    let networkManager = NetworkManager()
     @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {

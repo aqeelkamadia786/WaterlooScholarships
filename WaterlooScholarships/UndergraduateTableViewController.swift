@@ -11,9 +11,9 @@ import UIKit
 
 class UndergraduateTableViewController: UITableViewController, UISearchBarDelegate {
     
-    let networkManager = NetworkManager()
     var scholarships: [Scholarship] = []
     var filteredScholarships: [Scholarship] = []
+    let networkManager = NetworkManager()
     let defaults = UserDefaults.standard
     @IBOutlet weak var searchBar: UISearchBar!
     
