@@ -26,7 +26,7 @@ class DetailsViewController: UIViewController {
         descriptionLabel.text = scholarship?.details
         if (scholarship?.favourited)! {
             favouriteButton.isEnabled = false
-            favouriteButton.alpha = 0.5
+            favouriteButton.alpha = 0.3
         }
     }
     
@@ -44,7 +44,7 @@ class DetailsViewController: UIViewController {
             defaults.synchronize()
             if scholarship.favourited {
                 favouriteButton.isEnabled = false
-                favouriteButton.alpha = 0.5
+                favouriteButton.alpha = 0.3
             }   else {
                 favouriteButton.isEnabled = true
                 favouriteButton.alpha = 1.0
