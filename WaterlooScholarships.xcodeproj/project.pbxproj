@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		943644DA1F9D1F8A0098F9A5 /* graduation-cap.png in Resources */ = {isa = PBXBuildFile; fileRef = 943644D91F9D1F8A0098F9A5 /* graduation-cap.png */; };
-		943644DF1F9D213D0098F9A5 /* dollar-sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 943644DE1F9D213D0098F9A5 /* dollar-sign.png */; };
 		94D70A951F8DAA3B008227F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70A941F8DAA3B008227F5 /* AppDelegate.swift */; };
 		94D70A9A1F8DAA3B008227F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D70A981F8DAA3B008227F5 /* Main.storyboard */; };
 		94D70A9C1F8DAA3B008227F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D70A9B1F8DAA3B008227F5 /* Assets.xcassets */; };
@@ -24,6 +22,8 @@
 		94D70AD11F93FAE3008227F5 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AD01F93FAE3008227F5 /* DetailsViewController.swift */; };
 		94D70AD31F941208008227F5 /* FavouritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AD21F941208008227F5 /* FavouritesTableViewController.swift */; };
 		94D70AD51F958E8C008227F5 /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AD41F958E8C008227F5 /* FavouritesTableViewCell.swift */; };
+		94F5E0EC2053262F000A62FC /* dollar-sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 94F5E0EA2053262E000A62FC /* dollar-sign.png */; };
+		94F5E0ED2053262F000A62FC /* graduation-cap.png in Resources */ = {isa = PBXBuildFile; fileRef = 94F5E0EB2053262E000A62FC /* graduation-cap.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		943644D91F9D1F8A0098F9A5 /* graduation-cap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "graduation-cap.png"; path = "../../../../Downloads/iconbeast-lite-300/iconbeast lite 300 - png/graduation-cap.png"; sourceTree = "<group>"; };
-		943644DE1F9D213D0098F9A5 /* dollar-sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dollar-sign.png"; path = "../../../../Downloads/iconbeast-lite-300/iconbeast lite 300 - png/dollar-sign.png"; sourceTree = "<group>"; };
 		94D70A911F8DAA3B008227F5 /* WaterlooScholarships.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterlooScholarships.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D70A941F8DAA3B008227F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D70A991F8DAA3B008227F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,6 +65,8 @@
 		94D70AD01F93FAE3008227F5 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		94D70AD21F941208008227F5 /* FavouritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewController.swift; sourceTree = "<group>"; };
 		94D70AD41F958E8C008227F5 /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
+		94F5E0EA2053262E000A62FC /* dollar-sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollar-sign.png"; sourceTree = "<group>"; };
+		94F5E0EB2053262E000A62FC /* graduation-cap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "graduation-cap.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +154,8 @@
 				94D70A981F8DAA3B008227F5 /* Main.storyboard */,
 				94D70A9D1F8DAA3B008227F5 /* LaunchScreen.storyboard */,
 				94D70A9B1F8DAA3B008227F5 /* Assets.xcassets */,
-				943644D91F9D1F8A0098F9A5 /* graduation-cap.png */,
-				943644DE1F9D213D0098F9A5 /* dollar-sign.png */,
+				94F5E0EA2053262E000A62FC /* dollar-sign.png */,
+				94F5E0EB2053262E000A62FC /* graduation-cap.png */,
 				94D70AA01F8DAA3B008227F5 /* Info.plist */,
 			);
 			path = WaterlooScholarships;
@@ -289,10 +289,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				943644DF1F9D213D0098F9A5 /* dollar-sign.png in Resources */,
-				943644DA1F9D1F8A0098F9A5 /* graduation-cap.png in Resources */,
+				94F5E0ED2053262F000A62FC /* graduation-cap.png in Resources */,
 				94D70A9F1F8DAA3B008227F5 /* LaunchScreen.storyboard in Resources */,
 				94D70A9C1F8DAA3B008227F5 /* Assets.xcassets in Resources */,
+				94F5E0EC2053262F000A62FC /* dollar-sign.png in Resources */,
 				94D70A9A1F8DAA3B008227F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
