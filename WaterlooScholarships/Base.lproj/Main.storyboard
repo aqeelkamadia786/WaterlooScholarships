@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nb4-0Q-Z1H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nb4-0Q-Z1H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -92,32 +92,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3F-QB-Erd">
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3F-QB-Erd">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ng-kp-0Gn">
-                                        <rect key="frame" x="20" y="20" width="334" height="20.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="334" id="z7v-fK-gcX"/>
-                                        </constraints>
+                                        <rect key="frame" x="20" y="24" width="334" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRI-h8-eBz">
-                                        <rect key="frame" x="20" y="121" width="334" height="20.5"/>
+                                        <rect key="frame" x="20" y="114" width="334" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Value" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2W-FB-1i9">
-                                        <rect key="frame" x="20" y="70.5" width="334" height="20.5"/>
+                                        <rect key="frame" x="20" y="69" width="334" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25A-LL-KU6">
-                                        <rect key="frame" x="117" y="173.5" width="142" height="30"/>
+                                        <rect key="frame" x="100" y="159" width="175" height="30"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Add to Favourites">
@@ -129,18 +126,19 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="QRI-h8-eBz" firstAttribute="top" secondItem="E2W-FB-1i9" secondAttribute="bottom" constant="30" id="5bl-4S-VJk"/>
+                                    <constraint firstItem="8Ng-kp-0Gn" firstAttribute="centerX" secondItem="o3F-QB-Erd" secondAttribute="centerX" id="1iZ-Ly-9h4"/>
+                                    <constraint firstItem="25A-LL-KU6" firstAttribute="centerX" secondItem="o3F-QB-Erd" secondAttribute="centerX" id="5KH-OM-exJ"/>
+                                    <constraint firstItem="QRI-h8-eBz" firstAttribute="top" secondItem="E2W-FB-1i9" secondAttribute="bottom" constant="24" id="5bl-4S-VJk"/>
                                     <constraint firstItem="8Ng-kp-0Gn" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="AeV-4h-bG1"/>
-                                    <constraint firstItem="25A-LL-KU6" firstAttribute="top" secondItem="QRI-h8-eBz" secondAttribute="bottom" constant="32" id="M9g-xc-9Qf"/>
+                                    <constraint firstItem="25A-LL-KU6" firstAttribute="top" secondItem="QRI-h8-eBz" secondAttribute="bottom" constant="24" id="DGa-fO-fMy"/>
                                     <constraint firstItem="QRI-h8-eBz" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="TxO-Mq-Sla"/>
-                                    <constraint firstAttribute="trailing" secondItem="8Ng-kp-0Gn" secondAttribute="trailing" constant="21" id="U1f-qW-icT"/>
-                                    <constraint firstItem="25A-LL-KU6" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="117" id="UME-im-AJb"/>
-                                    <constraint firstAttribute="bottom" secondItem="25A-LL-KU6" secondAttribute="bottom" constant="349" id="VTI-sC-HH0"/>
-                                    <constraint firstAttribute="trailing" secondItem="QRI-h8-eBz" secondAttribute="trailing" constant="21" id="VZA-rX-ARh"/>
-                                    <constraint firstItem="8Ng-kp-0Gn" firstAttribute="top" secondItem="o3F-QB-Erd" secondAttribute="top" constant="20" id="ksC-Jd-ocD"/>
-                                    <constraint firstItem="E2W-FB-1i9" firstAttribute="top" secondItem="8Ng-kp-0Gn" secondAttribute="bottom" constant="30" id="lNw-4A-2Tv"/>
-                                    <constraint firstAttribute="trailing" secondItem="E2W-FB-1i9" secondAttribute="trailing" constant="21" id="tsB-cd-OMN"/>
-                                    <constraint firstAttribute="trailing" secondItem="25A-LL-KU6" secondAttribute="trailing" constant="116" id="vDG-IX-nkN"/>
+                                    <constraint firstItem="25A-LL-KU6" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="100" id="UME-im-AJb"/>
+                                    <constraint firstItem="QRI-h8-eBz" firstAttribute="centerX" secondItem="o3F-QB-Erd" secondAttribute="centerX" id="Uiu-N6-amQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="25A-LL-KU6" secondAttribute="trailing" constant="100" id="VBx-fb-Et6"/>
+                                    <constraint firstItem="8Ng-kp-0Gn" firstAttribute="top" secondItem="o3F-QB-Erd" secondAttribute="top" constant="24" id="ksC-Jd-ocD"/>
+                                    <constraint firstItem="E2W-FB-1i9" firstAttribute="top" secondItem="8Ng-kp-0Gn" secondAttribute="bottom" constant="24" id="lNw-4A-2Tv"/>
+                                    <constraint firstAttribute="bottom" secondItem="25A-LL-KU6" secondAttribute="bottom" constant="41" id="miM-Wh-JEh"/>
+                                    <constraint firstItem="E2W-FB-1i9" firstAttribute="centerX" secondItem="o3F-QB-Erd" secondAttribute="centerX" id="p0A-nM-Gg0"/>
                                     <constraint firstItem="E2W-FB-1i9" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="xOc-j2-kDz"/>
                                 </constraints>
                             </scrollView>
