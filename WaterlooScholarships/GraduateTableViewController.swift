@@ -13,11 +13,14 @@ class GraduateTableViewController: UITableViewController, UISearchBarDelegate {
     
     var scholarships: [Scholarship] = []
     var filteredScholarships: [Scholarship] = []
+    var cellType = CellType.scholarshipCell
     let networkManager = NetworkManager()
     @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let nib = UINib(nibName: "ErrorTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "ErrorTableViewCell")
         networkManager.getGraduate(completion: { object in
             let grads = object["data"] as! [[String: AnyObject]]
             for grad in grads {
@@ -84,8 +87,15 @@ class GraduateTableViewController: UITableViewController, UISearchBarDelegate {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isFiltering() {
-            return filteredScholarships.count
+            if filteredScholarships.count == 0 {
+                cellType = .errorCell
+                return 1
+            }   else {
+                cellType = .scholarshipCell
+                return filteredScholarships.count
+            }
         }
+        cellType = .scholarshipCell
         return scholarships.count
     }
     
@@ -94,15 +104,21 @@ class GraduateTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GraduateTableViewCell", for: indexPath) as! GraduateTableViewCell
-        let scholarship: Scholarship
-        if isFiltering() {
-            scholarship = filteredScholarships[indexPath.row]
-        }   else {
-            scholarship = scholarships[indexPath.row]
+        switch cellType {
+        case .errorCell:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ErrorTableViewCell", for: indexPath) as! ErrorTableViewCell
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "GraduateTableViewCell", for: indexPath) as! GraduateTableViewCell
+            let scholarship: Scholarship
+            if isFiltering() {
+                scholarship = filteredScholarships[indexPath.row]
+            }   else {
+                scholarship = scholarships[indexPath.row]
+            }
+            cell.title.text = scholarship.title
+            cell.value.text = scholarship.value
+            return cell
         }
-        cell.title.text = scholarship.title
-        cell.value.text = scholarship.value
-        return cell
     }
 }

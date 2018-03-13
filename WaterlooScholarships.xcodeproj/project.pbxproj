@@ -24,6 +24,8 @@
 		94D70AD51F958E8C008227F5 /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70AD41F958E8C008227F5 /* FavouritesTableViewCell.swift */; };
 		94F5E0EC2053262F000A62FC /* dollar-sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 94F5E0EA2053262E000A62FC /* dollar-sign.png */; };
 		94F5E0ED2053262F000A62FC /* graduation-cap.png in Resources */ = {isa = PBXBuildFile; fileRef = 94F5E0EB2053262E000A62FC /* graduation-cap.png */; };
+		94F5E12D20587927000A62FC /* ErrorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E12C20587927000A62FC /* ErrorTableViewCell.swift */; };
+		94F5E12F20587EA9000A62FC /* ErrorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F5E12E20587EA9000A62FC /* ErrorTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		94D70AD41F958E8C008227F5 /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
 		94F5E0EA2053262E000A62FC /* dollar-sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollar-sign.png"; sourceTree = "<group>"; };
 		94F5E0EB2053262E000A62FC /* graduation-cap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "graduation-cap.png"; sourceTree = "<group>"; };
+		94F5E12C20587927000A62FC /* ErrorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTableViewCell.swift; sourceTree = "<group>"; };
+		94F5E12E20587EA9000A62FC /* ErrorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 				94D70AC81F905551008227F5 /* UndergraduateTableViewCell.swift */,
 				94D70ACE1F93EFDC008227F5 /* GraduateTableViewCell.swift */,
 				94D70AD41F958E8C008227F5 /* FavouritesTableViewCell.swift */,
+				94F5E12C20587927000A62FC /* ErrorTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				94D70A941F8DAA3B008227F5 /* AppDelegate.swift */,
 				94D70AC21F8DAB9D008227F5 /* NetworkManager.swift */,
 				94D70A981F8DAA3B008227F5 /* Main.storyboard */,
+				94F5E12E20587EA9000A62FC /* ErrorTableViewCell.xib */,
 				94D70A9D1F8DAA3B008227F5 /* LaunchScreen.storyboard */,
 				94D70A9B1F8DAA3B008227F5 /* Assets.xcassets */,
 				94F5E0EA2053262E000A62FC /* dollar-sign.png */,
@@ -289,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F5E12F20587EA9000A62FC /* ErrorTableViewCell.xib in Resources */,
 				94F5E0ED2053262F000A62FC /* graduation-cap.png in Resources */,
 				94D70A9F1F8DAA3B008227F5 /* LaunchScreen.storyboard in Resources */,
 				94D70A9C1F8DAA3B008227F5 /* Assets.xcassets in Resources */,
@@ -327,6 +334,7 @@
 				94D70AC71F9053CB008227F5 /* Scholarship.swift in Sources */,
 				94D70A951F8DAA3B008227F5 /* AppDelegate.swift in Sources */,
 				94D70ACF1F93EFDC008227F5 /* GraduateTableViewCell.swift in Sources */,
+				94F5E12D20587927000A62FC /* ErrorTableViewCell.swift in Sources */,
 				94D70AC51F9052E0008227F5 /* UndergraduateTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
