@@ -28,7 +28,7 @@ class UndergraduateTableViewController: UITableViewController, UISearchBarDelega
             self.tableView.reloadData()
         })
         searchBar.delegate = self
-        searchBar.placeholder = "Filter scholarships"
+        searchBar.placeholder = "Search scholarships"
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
