@@ -12,13 +12,10 @@ import UIKit
 class FavouritesTableViewController: UITableViewController, NSKeyedUnarchiverDelegate {
     
     var scholarships: [Scholarship] = []
-    var cellType = CellType.scholarshipCell
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib(nibName: "ErrorTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "ErrorTableViewCell")
         if let favouritesData = defaults.object(forKey: "Favourites") as? Data {
             scholarships = NSKeyedUnarchiver.unarchiveObject(with: favouritesData) as! [Scholarship]
             tableView.reloadData()
@@ -46,11 +43,6 @@ class FavouritesTableViewController: UITableViewController, NSKeyedUnarchiverDel
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if scholarships.count == 0 {
-            cellType = .errorCell
-            return 1
-        }
-        cellType = .scholarshipCell
         return scholarships.count
     }
     
@@ -59,16 +51,10 @@ class FavouritesTableViewController: UITableViewController, NSKeyedUnarchiverDel
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch cellType {
-        case .errorCell:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ErrorTableViewCell", for: indexPath) as! ErrorTableViewCell
-            return cell
-        default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "FavouritesTableViewCell", for: indexPath) as! FavouritesTableViewCell
-            cell.title.text = scholarships[indexPath.row].title
-            cell.value.text = scholarships[indexPath.row].value
-            return cell
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavouritesTableViewCell", for: indexPath) as! FavouritesTableViewCell
+        cell.title.text = scholarships[indexPath.row].title
+        cell.value.text = scholarships[indexPath.row].value
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
