@@ -71,8 +71,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programs:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrM-C2-2hX">
+                                        <rect key="frame" x="20" y="159" width="334" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25A-LL-KU6">
-                                        <rect key="frame" x="100" y="159" width="175" height="30"/>
+                                        <rect key="frame" x="100" y="212" width="175" height="30"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Add to Favourites">
@@ -87,16 +93,19 @@
                                     <constraint firstItem="8Ng-kp-0Gn" firstAttribute="centerX" secondItem="o3F-QB-Erd" secondAttribute="centerX" id="1iZ-Ly-9h4"/>
                                     <constraint firstItem="25A-LL-KU6" firstAttribute="centerX" secondItem="o3F-QB-Erd" secondAttribute="centerX" id="5KH-OM-exJ"/>
                                     <constraint firstItem="QRI-h8-eBz" firstAttribute="top" secondItem="E2W-FB-1i9" secondAttribute="bottom" constant="24" id="5bl-4S-VJk"/>
+                                    <constraint firstAttribute="trailing" secondItem="vrM-C2-2hX" secondAttribute="trailing" constant="21" id="7Sv-t9-7i0"/>
                                     <constraint firstItem="8Ng-kp-0Gn" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="AeV-4h-bG1"/>
-                                    <constraint firstItem="25A-LL-KU6" firstAttribute="top" secondItem="QRI-h8-eBz" secondAttribute="bottom" constant="24" id="DGa-fO-fMy"/>
+                                    <constraint firstItem="25A-LL-KU6" firstAttribute="top" secondItem="vrM-C2-2hX" secondAttribute="bottom" constant="32" id="J1W-ds-Ytw"/>
                                     <constraint firstItem="QRI-h8-eBz" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="TxO-Mq-Sla"/>
                                     <constraint firstItem="25A-LL-KU6" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="100" id="UME-im-AJb"/>
                                     <constraint firstItem="QRI-h8-eBz" firstAttribute="centerX" secondItem="o3F-QB-Erd" secondAttribute="centerX" id="Uiu-N6-amQ"/>
                                     <constraint firstAttribute="trailing" secondItem="25A-LL-KU6" secondAttribute="trailing" constant="100" id="VBx-fb-Et6"/>
+                                    <constraint firstItem="vrM-C2-2hX" firstAttribute="top" secondItem="QRI-h8-eBz" secondAttribute="bottom" constant="24" id="iCN-9B-3cq"/>
                                     <constraint firstItem="8Ng-kp-0Gn" firstAttribute="top" secondItem="o3F-QB-Erd" secondAttribute="top" constant="24" id="ksC-Jd-ocD"/>
                                     <constraint firstItem="E2W-FB-1i9" firstAttribute="top" secondItem="8Ng-kp-0Gn" secondAttribute="bottom" constant="24" id="lNw-4A-2Tv"/>
-                                    <constraint firstAttribute="bottom" secondItem="25A-LL-KU6" secondAttribute="bottom" constant="41" id="miM-Wh-JEh"/>
+                                    <constraint firstAttribute="bottom" secondItem="25A-LL-KU6" secondAttribute="bottom" constant="40" id="miM-Wh-JEh"/>
                                     <constraint firstItem="E2W-FB-1i9" firstAttribute="centerX" secondItem="o3F-QB-Erd" secondAttribute="centerX" id="p0A-nM-Gg0"/>
+                                    <constraint firstItem="vrM-C2-2hX" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="p8A-qv-eFJ"/>
                                     <constraint firstItem="E2W-FB-1i9" firstAttribute="leading" secondItem="o3F-QB-Erd" secondAttribute="leading" constant="20" id="xOc-j2-kDz"/>
                                 </constraints>
                             </scrollView>
@@ -113,6 +122,7 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="QRI-h8-eBz" id="F55-Vr-sdo"/>
                         <outlet property="favouriteButton" destination="25A-LL-KU6" id="zAl-9D-6aI"/>
+                        <outlet property="programLabel" destination="vrM-C2-2hX" id="5X3-Xq-RGs"/>
                         <outlet property="titleLabel" destination="8Ng-kp-0Gn" id="u25-Dz-NM5"/>
                         <outlet property="valueLabel" destination="E2W-FB-1i9" id="ha1-IQ-sBy"/>
                     </connections>

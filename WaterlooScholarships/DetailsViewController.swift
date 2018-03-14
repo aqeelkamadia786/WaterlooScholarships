@@ -15,18 +15,29 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var valueLabel: UILabel!
     @IBOutlet weak var favouriteButton: UIButton!
+    @IBOutlet weak var programLabel: UILabel!
     var scholarship: Scholarship?
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = scholarship?.title
-        titleLabel.text = scholarship?.title
-        valueLabel.text = scholarship?.value
-        descriptionLabel.text = scholarship?.details
-        if (scholarship?.favourited)! {
-            favouriteButton.isEnabled = false
-            favouriteButton.alpha = 0.3
+        setupDetails()
+    }
+    
+    func setupDetails() {
+        if let scholarship = scholarship {
+            title = scholarship.title
+            titleLabel.text = scholarship.title
+            valueLabel.text = scholarship.value
+            descriptionLabel.text = scholarship.details
+            programLabel.text = "Program(s):"
+            for program in scholarship.programs {
+                programLabel.text?.append("\n" + program)
+            }
+            if scholarship.favourited {
+                favouriteButton.isEnabled = false
+                favouriteButton.alpha = 0.3
+            }
         }
     }
     
