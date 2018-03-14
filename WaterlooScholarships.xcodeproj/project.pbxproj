@@ -25,6 +25,7 @@
 		94F5E12F20587EA9000A62FC /* ErrorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F5E12E20587EA9000A62FC /* ErrorTableViewCell.xib */; };
 		94F5E1312058B1DF000A62FC /* ScholarshipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F5E1302058B1DF000A62FC /* ScholarshipTableViewCell.xib */; };
 		94F5E1352058B599000A62FC /* ScholarshipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E1342058B599000A62FC /* ScholarshipTableViewCell.swift */; };
+		94F5E137205991EF000A62FC /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E136205991EF000A62FC /* DetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		94F5E12E20587EA9000A62FC /* ErrorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorTableViewCell.xib; sourceTree = "<group>"; };
 		94F5E1302058B1DF000A62FC /* ScholarshipTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScholarshipTableViewCell.xib; sourceTree = "<group>"; };
 		94F5E1342058B599000A62FC /* ScholarshipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholarshipTableViewCell.swift; sourceTree = "<group>"; };
+		94F5E136205991EF000A62FC /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				94F5E1342058B599000A62FC /* ScholarshipTableViewCell.swift */,
 				94F5E12C20587927000A62FC /* ErrorTableViewCell.swift */,
+				94F5E136205991EF000A62FC /* DetailTableViewCell.swift */,
 				94D70A981F8DAA3B008227F5 /* Main.storyboard */,
 				94F5E1302058B1DF000A62FC /* ScholarshipTableViewCell.xib */,
 				94F5E12E20587EA9000A62FC /* ErrorTableViewCell.xib */,
@@ -331,6 +334,7 @@
 				94D70AC71F9053CB008227F5 /* Scholarship.swift in Sources */,
 				94D70A951F8DAA3B008227F5 /* AppDelegate.swift in Sources */,
 				94F5E12D20587927000A62FC /* ErrorTableViewCell.swift in Sources */,
+				94F5E137205991EF000A62FC /* DetailTableViewCell.swift in Sources */,
 				94D70AC51F9052E0008227F5 /* UndergraduateTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
