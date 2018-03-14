@@ -19,8 +19,10 @@ class GraduateTableViewController: UITableViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib(nibName: "ErrorTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "ErrorTableViewCell")
+        let scholarshipNib = UINib(nibName: "ScholarshipTableViewCell", bundle: nil)
+        let errorNib = UINib(nibName: "ErrorTableViewCell", bundle: nil)
+        tableView.register(scholarshipNib, forCellReuseIdentifier: "ScholarshipTableViewCell")
+        tableView.register(errorNib, forCellReuseIdentifier: "ErrorTableViewCell")
         networkManager.getGraduate(completion: { object in
             let grads = object["data"] as! [[String: AnyObject]]
             for grad in grads {
@@ -109,7 +111,7 @@ class GraduateTableViewController: UITableViewController, UISearchBarDelegate {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ErrorTableViewCell", for: indexPath) as! ErrorTableViewCell
             return cell
         default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "GraduateTableViewCell", for: indexPath) as! GraduateTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ScholarshipTableViewCell", for: indexPath) as! ScholarshipTableViewCell
             let scholarship: Scholarship
             if isFiltering() {
                 scholarship = filteredScholarships[indexPath.row]
@@ -120,5 +122,9 @@ class GraduateTableViewController: UITableViewController, UISearchBarDelegate {
             cell.value.text = scholarship.value
             return cell
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "gradSegue", sender: indexPath)
     }
 }

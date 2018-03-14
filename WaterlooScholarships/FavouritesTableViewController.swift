@@ -16,6 +16,8 @@ class FavouritesTableViewController: UITableViewController, NSKeyedUnarchiverDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let scholarshipNib = UINib(nibName: "ScholarshipTableViewCell", bundle: nil)
+        tableView.register(scholarshipNib, forCellReuseIdentifier: "ScholarshipTableViewCell")
         if let favouritesData = defaults.object(forKey: "Favourites") as? Data {
             scholarships = NSKeyedUnarchiver.unarchiveObject(with: favouritesData) as! [Scholarship]
             tableView.reloadData()
@@ -51,10 +53,14 @@ class FavouritesTableViewController: UITableViewController, NSKeyedUnarchiverDel
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FavouritesTableViewCell", for: indexPath) as! FavouritesTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ScholarshipTableViewCell", for: indexPath) as! ScholarshipTableViewCell
         cell.title.text = scholarships[indexPath.row].title
         cell.value.text = scholarships[indexPath.row].value
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "favouriteSegue", sender: indexPath)
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
