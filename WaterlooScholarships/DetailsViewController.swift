@@ -19,7 +19,7 @@ enum DetailSection {
 class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var favouriteButton: UIBarButtonItem!
-    @IBOutlet weak var tableView: UITableView!
+    var tableView: UITableView!
     var detailSection = DetailSection.title
     let titles = ["Title", "Value", "Description", "Programs"]
     var scholarship: Scholarship?
@@ -28,8 +28,13 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView = UITableView(frame: CGRect(x: 0, y: UIApplication.shared.statusBarFrame.height, width: view.frame.width, height: view.frame.height))
         tableView.delegate = self
         tableView.dataSource = self
+        let detailNib = UINib(nibName: "DetailTableViewCell", bundle: nil)
+        tableView.register(detailNib, forCellReuseIdentifier: "DetailTableViewCell")
+//        tableView.register(DetailTableViewCell.self, forCellReuseIdentifier: "DetailTableViewCell")
+        view.addSubview(tableView)
         setupDetails()
     }
     
@@ -79,6 +84,8 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
         popup.addAction(action)
         present(popup, animated: true, completion: nil)
     }
+    
+    /// MARK: UITableViewDataSource Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return details[section].count

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94735B3E20A879BB00653AA4 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94735B3D20A879BB00653AA4 /* DetailTableViewCell.xib */; };
 		94D70A951F8DAA3B008227F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D70A941F8DAA3B008227F5 /* AppDelegate.swift */; };
 		94D70A9A1F8DAA3B008227F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D70A981F8DAA3B008227F5 /* Main.storyboard */; };
 		94D70A9C1F8DAA3B008227F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D70A9B1F8DAA3B008227F5 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94735B3D20A879BB00653AA4 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		94D70A911F8DAA3B008227F5 /* WaterlooScholarships.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterlooScholarships.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D70A941F8DAA3B008227F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D70A991F8DAA3B008227F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				94F5E1302058B1DF000A62FC /* ScholarshipTableViewCell.xib */,
 				94F5E12E20587EA9000A62FC /* ErrorTableViewCell.xib */,
 				94D70A9D1F8DAA3B008227F5 /* LaunchScreen.storyboard */,
+				94735B3D20A879BB00653AA4 /* DetailTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				94D70A9F1F8DAA3B008227F5 /* LaunchScreen.storyboard in Resources */,
 				94D70A9C1F8DAA3B008227F5 /* Assets.xcassets in Resources */,
 				94F5E0EC2053262F000A62FC /* dollar-sign.png in Resources */,
+				94735B3E20A879BB00653AA4 /* DetailTableViewCell.xib in Resources */,
 				94D70A9A1F8DAA3B008227F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 48BF2267S8;
 				INFOPLIST_FILE = WaterlooScholarships/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AqeelKamadia.WaterlooScholarships;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -506,6 +511,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 48BF2267S8;
 				INFOPLIST_FILE = WaterlooScholarships/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AqeelKamadia.WaterlooScholarships;
 				PRODUCT_NAME = "$(TARGET_NAME)";
