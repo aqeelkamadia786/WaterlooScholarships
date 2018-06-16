@@ -57,9 +57,7 @@ class UndergraduateTableViewController: UITableViewController, UISearchBarDelega
     }
     
     func filterContentForSearchText(searchText: String) {
-        if scholarships.count == 0 {
-            return
-        }
+        guard scholarships.count != 0 else { return }
         filteredScholarships = scholarships.filter({(scholarship: Scholarship) -> Bool in
             let programs = scholarship.programs.filter({(program: String) -> Bool in
                 return program.lowercased().contains(searchText.lowercased())
@@ -79,13 +77,12 @@ class UndergraduateTableViewController: UITableViewController, UISearchBarDelega
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = tableView.indexPathForSelectedRow {
-            let viewController = segue.destination as! DetailsViewController
-            if isFiltering() {
-                viewController.scholarship = filteredScholarships[indexPath.row]
-            }   else {
-                viewController.scholarship = scholarships[indexPath.row]
-            }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let viewController = segue.destination as! DetailsViewController
+        if isFiltering() {
+            viewController.scholarship = filteredScholarships[indexPath.row]
+        }   else {
+            viewController.scholarship = scholarships[indexPath.row]
         }
     }
     
@@ -135,4 +132,3 @@ class UndergraduateTableViewController: UITableViewController, UISearchBarDelega
     }
 
 }
-

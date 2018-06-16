@@ -21,7 +21,6 @@ class DetailTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+    required init?(coder aDecoder: NSCoder) { super.init(coder: aDecoder) }
+
 }

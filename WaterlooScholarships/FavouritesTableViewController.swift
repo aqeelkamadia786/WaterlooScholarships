@@ -34,10 +34,9 @@ class FavouritesTableViewController: UITableViewController, NSKeyedUnarchiverDel
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = tableView.indexPathForSelectedRow {
-            let viewController = segue.destination as! DetailsViewController
-            viewController.scholarship = scholarships[indexPath.row]
-        }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let viewController = segue.destination as! DetailsViewController
+        viewController.scholarship = scholarships[indexPath.row]
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
