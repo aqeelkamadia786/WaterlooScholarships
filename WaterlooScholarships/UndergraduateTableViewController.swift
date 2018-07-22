@@ -9,19 +9,32 @@
 import Foundation
 import UIKit
 
+// MARK: - Enums
+
 enum CellType {
     case scholarshipCell
     case errorCell
 }
 
+// MARK: - Class
+
 class UndergraduateTableViewController: UITableViewController, UISearchBarDelegate {
-    
+
+    // MARK: - Properties
+
     var scholarships: [Scholarship] = []
+
     var filteredScholarships: [Scholarship] = []
+
     var cellType = CellType.scholarshipCell
+
     let networkManager = NetworkManager()
+
     let defaults = UserDefaults.standard
+
     @IBOutlet weak var searchBar: UISearchBar!
+
+    // MARK: - View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +53,8 @@ class UndergraduateTableViewController: UITableViewController, UISearchBarDelega
         searchBar.delegate = self
         searchBar.placeholder = "Search scholarships"
     }
+
+    // MARK: - UISearchBarDelegate Conformance
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filterContentForSearchText(searchText: searchText)
@@ -85,6 +100,8 @@ class UndergraduateTableViewController: UITableViewController, UISearchBarDelega
             viewController.scholarship = scholarships[indexPath.row]
         }
     }
+
+    // MARK: - UITableViewDataSource Conformance
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -126,6 +143,8 @@ class UndergraduateTableViewController: UITableViewController, UISearchBarDelega
             return cell
         }
     }
+
+    // MARK: - UITableViewDelegate Conformance
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "UndergradSegue", sender: indexPath)

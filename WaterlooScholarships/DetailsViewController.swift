@@ -21,14 +21,24 @@ enum DetailSection {
 // MARK: - Class
 
 class DetailsViewController: UIViewController {
+
+    // MARK: - Properties
     
     @IBOutlet weak var favouriteButton: UIBarButtonItem!
+
     var tableView: UITableView!
+
     var detailSection = DetailSection.title
+
     let titles = ["Title", "Value", "Description", "Programs"]
+
     var scholarship: Scholarship?
+
     var details: [[String]] = []
+
     let defaults = UserDefaults.standard
+
+    // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()

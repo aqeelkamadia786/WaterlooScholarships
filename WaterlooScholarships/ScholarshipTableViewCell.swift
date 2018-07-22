@@ -10,19 +10,21 @@ import Foundation
 import UIKit
 
 class ScholarshipTableViewCell: UITableViewCell {
+
+    // MARK: - Properties
     
     @IBOutlet weak var title: UILabel!
+
     @IBOutlet weak var value: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
+
+    // MARK: - Initializers
+
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+
 }

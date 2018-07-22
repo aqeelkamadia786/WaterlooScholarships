@@ -9,10 +9,15 @@
 import Foundation
 
 class Scholarship: NSObject, NSCoding {
+
     let title: String
+
     let value: String
+
     let details: String
+
     let programs: [String]
+
     var favourited: Bool
     
     init(with dictionary: [String: AnyObject]) {
@@ -38,4 +43,5 @@ class Scholarship: NSObject, NSCoding {
         aCoder.encode(self.programs, forKey: "programs")
         aCoder.encode(self.favourited, forKey: "favourited")
     }
+
 }

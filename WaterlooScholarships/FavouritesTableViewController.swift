@@ -10,9 +10,14 @@ import Foundation
 import UIKit
 
 class FavouritesTableViewController: UITableViewController, NSKeyedUnarchiverDelegate {
+
+    // MARK: - Properties
     
     var scholarships: [Scholarship] = []
+
     let defaults = UserDefaults.standard
+
+    // MARK: - View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +43,8 @@ class FavouritesTableViewController: UITableViewController, NSKeyedUnarchiverDel
         let viewController = segue.destination as! DetailsViewController
         viewController.scholarship = scholarships[indexPath.row]
     }
+
+    // MARK: - UITableViewDataSource Conformance
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -57,6 +64,8 @@ class FavouritesTableViewController: UITableViewController, NSKeyedUnarchiverDel
         cell.value.text = scholarships[indexPath.row].value
         return cell
     }
+
+    // MARK: - UITableViewDelegate Conformance
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "favouriteSegue", sender: indexPath)
@@ -70,5 +79,5 @@ class FavouritesTableViewController: UITableViewController, NSKeyedUnarchiverDel
             defaults.synchronize()
         }
     }
-    
+
 }
