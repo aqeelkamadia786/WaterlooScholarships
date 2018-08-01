@@ -10,6 +10,8 @@ import Foundation
 
 class Scholarship: NSObject, NSCoding {
 
+    // MARK: - Properties
+
     let title: String
 
     let value: String
@@ -19,6 +21,8 @@ class Scholarship: NSObject, NSCoding {
     let programs: [String]
 
     var favourited: Bool
+
+    // MARK: - Initializers
     
     init(with dictionary: [String: AnyObject]) {
         self.title = dictionary["title"] as! String
@@ -35,6 +39,8 @@ class Scholarship: NSObject, NSCoding {
         self.programs = aDecoder.decodeObject(forKey: "programs") as! [String]
         self.favourited = aDecoder.decodeBool(forKey: "favourited")
     }
+
+    // MARK: - Methods
     
     func encode(with aCoder: NSCoder) {
         aCoder.encode(self.title, forKey: "title")
