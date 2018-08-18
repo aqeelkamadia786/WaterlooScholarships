@@ -11,14 +11,10 @@ import UIKit
 
 class ErrorTableViewCell: UITableViewCell {
 
-    // MARK: - Initializers
+    // MARK: - Public Methods
 
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    func configure(with title: String?) {
+        textLabel?.text = title
     }
 
 }

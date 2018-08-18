@@ -13,7 +13,7 @@ class DetailTableViewCell: UITableViewCell {
 
     // MARK: - Properties
     
-    @IBOutlet weak var label: UILabel!
+    var label: UILabel!
 
     // MARK: - Initializers
 

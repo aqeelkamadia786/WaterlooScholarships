@@ -10,6 +10,8 @@ import Foundation
 
 class Scholarship: NSObject, NSCoding {
 
+    // TODO: Use Decodable conformance
+
     // MARK: - Properties
 
     let title: String

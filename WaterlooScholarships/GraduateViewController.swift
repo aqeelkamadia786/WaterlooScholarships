@@ -1,14 +1,14 @@
 //
-//  UndergraduateViewController.swift
+//  GraduateViewController.swift
 //  WaterlooScholarships
 //
-//  Created by Aqeel Kamadia on 2018-07-28.
+//  Created by Aqeel Kamadia on 2018-08-02.
 //  Copyright © 2018 Aqeel Kamadia. All rights reserved.
 //
 
 import UIKit
 
-class UndergraduateViewController: BaseTableViewController {
+class GraduateViewController: BaseTableViewController {
 
     // MARK: - Properties
 
@@ -44,11 +44,11 @@ class UndergraduateViewController: BaseTableViewController {
         if #available(iOS 11.0, *) {
             navigationController?.navigationBar.prefersLargeTitles = true
         }
-        navigationItem.title = "Undergraduate"
+        navigationItem.title = "Graduate"
 
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search Undergraduate Scholarships"
+        searchController.searchBar.placeholder = "Search Graduate Scholarships"
         searchController.searchBar.searchBarStyle = .prominent
         if #available(iOS 11.0, *) {
             navigationItem.searchController = searchController
@@ -62,7 +62,7 @@ class UndergraduateViewController: BaseTableViewController {
         super.viewDidAppear(animated)
 
         activityIndicatory.startAnimating()
-        networkManager.getUndergraduate(completion: { object in
+        networkManager.getGraduate(completion: { object in
             let undergrads = object["data"] as! [[String: AnyObject]]
             for undergrad in undergrads {
                 self.scholarships.append(Scholarship(with: undergrad))
@@ -89,7 +89,7 @@ class UndergraduateViewController: BaseTableViewController {
 
 // MARK: - UITableViewDataSource Conformance
 
-extension UndergraduateViewController {
+extension GraduateViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isFiltering() {
@@ -131,7 +131,7 @@ extension UndergraduateViewController {
 
 // MARK: - UITableViewDelegate Conformance
 
-extension UndergraduateViewController {
+extension GraduateViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
@@ -151,7 +151,7 @@ extension UndergraduateViewController {
 
 // MARK: - UISearchResultsUpdating Conformance
 
-extension UndergraduateViewController: UISearchResultsUpdating {
+extension GraduateViewController: UISearchResultsUpdating {
 
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text else { return }
@@ -163,7 +163,7 @@ extension UndergraduateViewController: UISearchResultsUpdating {
 
 // MARK: - UISearchBarDelegate Conformance
 
-extension UndergraduateViewController: UISearchBarDelegate {
+extension GraduateViewController: UISearchBarDelegate {
 
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchBar.showsCancelButton = true
@@ -180,7 +180,7 @@ extension UndergraduateViewController: UISearchBarDelegate {
 
 // MARK: - Private Methods
 
-private extension UndergraduateViewController {
+private extension GraduateViewController {
 
     func filterContentForSearchText(searchText: String) {
         guard scholarships.count != 0 else { return }

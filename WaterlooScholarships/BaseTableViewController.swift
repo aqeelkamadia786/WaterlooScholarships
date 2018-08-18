@@ -73,7 +73,8 @@ private extension BaseTableViewController {
 
         activityIndicatory = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityIndicatory.hidesWhenStopped = true
-        tableView.addSubview(activityIndicatory)
+        view.addSubview(activityIndicatory)
+        view.bringSubview(toFront: activityIndicatory)
     }
 
     /// Sets up the constraints for the views in this view controller.
@@ -82,6 +83,9 @@ private extension BaseTableViewController {
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+
+        activityIndicatory.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        activityIndicatory.centerYAnchor.constraint(equalTo: view.centerYAnchor)
     }
 
 }
